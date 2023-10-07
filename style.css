@@ -270,7 +270,7 @@ section{
     width: 0;
     height: 0;
     border-top: 384px solid var(--main-color);
-    border-right: 384px solid var(--main-color);
+    border-right: 384px solid rgb(62, 59, 59);
     border-bottom: 384px solid rgb(62, 59, 59);
     border-left: 384px solid transparent;
 }
