@@ -14,7 +14,7 @@
 :root{
     --bg-color: #fdfdfd;
     --text-color:#333;
-    --main-color: #022f02;
+    --main-color: #19173a;
     --white-color:#fdfdfd;
     --shadow-color: rgba(0,0,0,.2);
 }
@@ -43,8 +43,8 @@ img{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 7%;
-    /* background-color: gray; */
+    padding: 0.1rem 7%;
+    background-color: gray;
     display: flex;
     align-items: center;
     z-index: 100;
@@ -542,6 +542,10 @@ span{
     background: var(--main-color);
 }
 .footer-text p{
+    font-size: 1.6rem;
+    color: var(--white-color);
+}
+#currentYear{
     font-size: 1.6rem;
     color: var(--white-color);
 }

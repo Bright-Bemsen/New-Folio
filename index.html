@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>brightbemsen.netlify.app</title>
+    <link rel="icon" type="image/png" href="asset/Fullgist_New_Logo.png" />
+    <title>fullgist_porfolio</title>
 
 <!-- ======swiper css========== -->
 <link
@@ -236,14 +237,18 @@
      <!-- =====================FOOTER DESIGN========================== -->
      <footer class="footer">
         <div class="footer-text">
-            <p>Copyright &copy; 2023 by Bright Update | All Rights Reserved.</p>
+            <p>Copyright &copy; </span> <span id="currentYear"></span> || <b>Fullgist</b> || All Rights Reserved.</p>
         </div>
         <div class="footer-iconTop">
             <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
         </div>
      </footer>
 
+     <!-- footer javascript -->
 
+     <script>
+        document.getElementById("currentYear").innerText = new Date().getFullYear();
+    </script>
      <!-- ==============scroll reveal====================== -->
      <script src="https://unpkg.com/scrollreveal"></script>
 
