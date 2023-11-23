@@ -50,6 +50,7 @@ img{
     z-index: 100;
     transition: 5s;
     box-shadow: 10 4rem 4rem var(--shadow-color);
+   
 }
 
 
@@ -73,6 +74,7 @@ img{
     font-weight: 500;
     margin-right: 3.5rem;
     padding: 1rem;
+   
 }
 
 .navbar a:hover{
@@ -127,6 +129,7 @@ img{
 section{
     min-height: 100vh;
     padding: 10rem 7% 2rem;
+    overflow-x: hidden;
 }
 
 
@@ -135,22 +138,27 @@ section{
     display: flex;
     align-items: center;
 }
+
 .home .home-content{
     max-width: 44rem; 
 }
+
 .home-content h3{
     font-size: 3.2rem;
     font-weight: 700;
     line-height: .3;
 }
+
 .home-content h1{
     font-size: 5.6rem;
     font-weight: 700;
     margin-bottom: .3rem;
 }
+
 .home-content p{
     font-size: 1.6rem;
 }
+
 .home-content .social-media a{
     display: inline-flex;
     justify-content: center;
@@ -166,10 +174,12 @@ section{
     margin: 2.5rem 1.5rem 3rem 0;
     transition: 2s ease;
 }
+
 .home-content .social-media a:hover{
     background: var(--main-color);
     color: var(--white-color);
 }
+
 .btn{
     display: inline-block;
     padding: 1.2rem 2.8rem;
@@ -190,27 +200,31 @@ section{
     color: var(--main-color);
     border-color: var(--main-color);
 }
+
 .home .profession-container{
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    width: 700px;
-    height: 700px;
+    width: 650px;
+    height: 650px;
     overflow: hidden;
     pointer-events: none;
 }
+
 .home .profession-container .profession-box{
     position: absolute;
     top: 0;
     right: 0;
-    width: 700px;
-    height: 700px;
+    bottom: 5rem;
+    width: 650px;
+    height: 650px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     animation: professionRotate 13s ease-out infinite;
+    
 }
 
 @keyframes professionRotate{
@@ -230,6 +244,7 @@ section{
         transform: rotate(-360deg);
     }
 }
+
 .home .profession-box .profession{
     position: absolute;
     left: 0;
@@ -238,31 +253,38 @@ section{
     flex-direction: column;
     color: var(--main-color);
     transform: rotate(calc(360deg / 4 * var(--i)));
-    transform-origin: 350px;
+    transform-origin: 325px;
     background: var(--bg-color);
-    padding: 13px 0;
+    padding: 10px .0px;
 }
+
 .home .profession-box .profession:nth-child(1) i {
     margin-right: 15px;
 }
+
 .home .profession-box .profession:nth-child(2),
 .home .profession-box .profession:nth-child(4) {
     padding-bottom: 20px;
 }
+
 .home .profession i{
     font-size: 3.8rem;
 }
+
 .home .profession h3{
-    font-size: 3.2rem;
+    font-size: 2rem;
     line-height: 1;
     font-weight: 600;
 }
+
 .home .profession-box .circle{
-    width: 540px;
-    height: 540px;
+    width: 450px;
+    height: 450px;
     border: 3px solid var(--main-color);
-    border-radius: 50%;
+    border-radius: 15%;
+    
 }
+
 .home .profession-container .overlay {
     position: absolute;
     top: 0;
@@ -274,12 +296,13 @@ section{
     border-bottom: 340px solid rgb(62, 59, 59);
     border-left: 340px solid transparent;
 }
+
 .home-img img{
     position: absolute;
-    bottom: 0;
+    bottom: 16px;
     right: 0;
-    width: 27%;
-    pointer-events: none;
+    width: 23%;
+    pointer-events:none;
 }
 
 
@@ -292,6 +315,7 @@ span{
     justify-content: center;
     align-items: center;
     gap: 4rem;
+    
 }
 .about img{
     width: 30vw;
@@ -316,6 +340,7 @@ span{
 .services{
     min-height: auto;
     padding-bottom: 7rem;
+    overflow: hidden;
 }
 .services h2{
     margin-bottom: 5rem;
@@ -361,6 +386,7 @@ span{
 /* ============================PORTFOLIO SECTION================================== */
 .portfolio{
     padding-bottom: 10rem;
+    overflow: hidden;
 }
 .portfolio h2{
     margin-bottom: 4rem;
@@ -643,11 +669,11 @@ span{
     #menu-icon{
         display: block;
         position: relative;
-        right: 18rem;
+        right: 2rem;
     }
     #darkMoon-icon{
         position: absolute;
-        right: 30rem;
+        right: 10rem;
         font-size: 2.6rem;
         color: var(--text-color);
         margin-bottom: .1rem;
