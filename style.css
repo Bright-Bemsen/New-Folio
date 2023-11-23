@@ -14,7 +14,7 @@
 :root{
     --bg-color: #fdfdfd;
     --text-color:#333;
-    --main-color: #19173a;
+    --main-color: #8a5c07;
     --white-color:#fdfdfd;
     --shadow-color: rgba(0,0,0,.2);
 }
@@ -195,8 +195,8 @@ section{
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    width: 768px;
-    height: 768px;
+    width: 700px;
+    height: 700px;
     overflow: hidden;
     pointer-events: none;
 }
@@ -204,8 +204,8 @@ section{
     position: absolute;
     top: 0;
     right: 0;
-    width: 768px;
-    height: 768px;
+    width: 700px;
+    height: 700px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -238,7 +238,7 @@ section{
     flex-direction: column;
     color: var(--main-color);
     transform: rotate(calc(360deg / 4 * var(--i)));
-    transform-origin: 384px;
+    transform-origin: 350px;
     background: var(--bg-color);
     padding: 13px 0;
 }
@@ -258,8 +258,8 @@ section{
     font-weight: 600;
 }
 .home .profession-box .circle{
-    width: 560px;
-    height: 560px;
+    width: 540px;
+    height: 540px;
     border: 3px solid var(--main-color);
     border-radius: 50%;
 }
@@ -269,10 +269,10 @@ section{
     right: 0;
     width: 0;
     height: 0;
-    border-top: 384px solid var(--main-color);
-    border-right: 384px solid rgb(62, 59, 59);
-    border-bottom: 384px solid rgb(62, 59, 59);
-    border-left: 384px solid transparent;
+    border-top: 340px solid var(--main-color);
+    border-right: 340px solid rgb(62, 59, 59);
+    border-bottom: 340px solid rgb(62, 59, 59);
+    border-left: 340px solid transparent;
 }
 .home-img img{
     position: absolute;
@@ -642,10 +642,12 @@ span{
 @media (max-width: 768px){
     #menu-icon{
         display: block;
+        position: relative;
+        right: 18rem;
     }
     #darkMoon-icon{
         position: absolute;
-        right: 7rem;
+        right: 30rem;
         font-size: 2.6rem;
         color: var(--text-color);
         margin-bottom: .1rem;
@@ -701,8 +703,8 @@ span{
 
     .home .profession-container{
         left: 0;
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        height: 60%;
     }
     .home .profession-container .profession-box{
         position: fixed;
@@ -759,7 +761,7 @@ span{
         text-align: center;
     }
     .about-img img{
-        width: 70vh;
+        width: 45vh;
         margin-top: -2rem;
     }
 
@@ -776,10 +778,10 @@ span{
 
     /* testimonial section responsiveness */
     .testimonial-container .testimonial-wrapper{
-        padding: 5rem 0;
+        padding: 2rem 0;
     }
     .testimonial-content .testimonial-slide{
-        padding: 3rem 2rem;
+        padding: 1rem 0.5rem;
     }
     .testimonial-box .swiper-button-next,
     .testimonial-box .swiper-button-prev{
