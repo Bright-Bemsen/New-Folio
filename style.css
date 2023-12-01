@@ -137,6 +137,7 @@ section{
 .home{
     display: flex;
     align-items: center;
+    background-color: rgb(62, 59, 59);
 }
 
 .home .home-content{
@@ -255,7 +256,7 @@ section{
     transform: rotate(calc(360deg / 4 * var(--i)));
     transform-origin: 325px;
     background: var(--bg-color);
-    padding: 10px .0px;
+    padding: 1rem .0px;
 }
 
 .home .profession-box .profession:nth-child(1) i {
@@ -268,11 +269,11 @@ section{
 }
 
 .home .profession i{
-    font-size: 3.8rem;
+    font-size: 3rem;
 }
 
 .home .profession h3{
-    font-size: 2rem;
+    font-size: 4rem;
     line-height: 1;
     font-weight: 600;
 }
@@ -282,6 +283,7 @@ section{
     height: 450px;
     border: 3px solid var(--main-color);
     border-radius: 15%;
+    
     
 }
 
@@ -294,6 +296,7 @@ section{
     border-top: 340px solid var(--main-color);
     border-right: 340px solid rgb(62, 59, 59);
     border-bottom: 340px solid rgb(62, 59, 59);
+    /* border-left: 340px solid rgb(62, 59, 59); */
     border-left: 340px solid transparent;
 }
 
