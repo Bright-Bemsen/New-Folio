@@ -863,3 +863,23 @@ span{
         margin-top: 2rem;
     }
 }
+@media (max-width: 350px){
+    .home .profession-box .circle{
+        width: 40px;
+        height: 50px;
+        border: 3px solid var(--main-color);
+        border-radius: 15%;
+    }
+    
+    .home .profession-container .overlay {
+        position: fixed;
+        top: 70rem;
+        left: 50%;
+        right: 0;
+        border-top: 340px solid var(--main-color);
+        border-right: 340px solid rgb(62, 59, 59);
+        border-bottom: 340px solid rgb(62, 59, 59);
+        /* border-left: 340px solid rgb(62, 59, 59); */
+        border-left: 340px solid transparent;
+    }
+}
