@@ -255,7 +255,7 @@ section{
     color: var(--white-color);
     transform: rotate(calc(360deg / 4 * var(--i)));
     transform-origin: 325px;
-    background: var(--main-color);
+    /* background: var(--main-color); */
     padding: 1rem .0px;
 }
 
@@ -281,7 +281,7 @@ section{
 .home .profession-box .circle{
     width: 40px;
     height: 450px;
-    border: 3px solid var(--main-color);
+    /* border: 3px solid var(--main-color); */
     border-radius: 15%;
     
     
@@ -735,13 +735,15 @@ span{
         left: 0;
         width: 90%;
         height: 60%;
+    
     }
     .home .profession-container .profession-box{
         position: fixed;
-        top: 65%;
+        top: 68%;
         left: 0;
         border-radius: 0;
         width: 100%;
+
     }
     .home .profession-box .profession{
         padding: 0 13px;
@@ -873,13 +875,13 @@ span{
     
     .home .profession-container .overlay {
         position: fixed;
-        top: 70rem;
+        top: 65rem;
         left: 50%;
         right: 0;
-        border-top: 340px solid var(--main-color);
-        border-right: 340px solid rgb(62, 59, 59);
-        border-bottom: 340px solid rgb(62, 59, 59);
+        border-top: 200px solid var(--main-color);
+        border-right: 200px solid rgb(128, 77, 77);
+        border-bottom: 200px solid rgb(212, 155, 155);
         /* border-left: 340px solid rgb(62, 59, 59); */
-        border-left: 340px solid transparent;
+        border-left: 200px solid transparent;
     }
 }
