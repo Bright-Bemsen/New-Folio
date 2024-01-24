@@ -211,20 +211,22 @@ section{
     height: 650px;
     overflow: hidden;
     pointer-events: none;
+    /* background-color: red; */
 }
 
 .home .profession-container .profession-box{
     position: absolute;
-    top: 0;
+    top: 10;
     right: 0;
     bottom: 5rem;
-    width: 650px;
-    height: 650px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: professionRotate 13s ease-out infinite;
+    animation: professionRotate 20s ease-out infinite;
+    /* background-color: red; */
     
 }
 
@@ -248,7 +250,7 @@ section{
 
 .home .profession-box .profession{
     position: absolute;
-    left: 0;
+    left: -20%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -294,7 +296,7 @@ section{
     width: 0;
     height: 0;
     border-top: 340px solid var(--main-color);
-    border-right: 340px solid rgb(62, 59, 59);
+    border-right: 340px solid rgb(59, 59, 62);
     border-bottom: 340px solid rgb(62, 59, 59);
     /* border-left: 340px solid rgb(62, 59, 59); */
     border-left: 340px solid transparent;
@@ -647,6 +649,7 @@ span{
     }
     .home .profession-container .profession-box{
         right: -45rem;
+        background-color: red;
     }
     .home .profession-container .overlay{
         right: -39.5rem;
