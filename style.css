@@ -148,16 +148,19 @@ section{
     font-size: 3.2rem;
     font-weight: 700;
     line-height: .3;
+    color: #fdfdfd;
 }
 
 .home-content h1{
     font-size: 5.6rem;
     font-weight: 700;
     margin-bottom: .3rem;
+    color: #8a5c07;
 }
 
 .home-content p{
     font-size: 1.6rem;
+    color: #fdfdfd;
 }
 
 .home-content .social-media a{
