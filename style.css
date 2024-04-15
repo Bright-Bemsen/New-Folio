@@ -592,7 +592,7 @@ nav .fas{
         font-size: 16px;
     }
     .header-text h1{
-        margin-top: 20%;
+        margin-top: 35%;
         font-size: 40px;
         background: #302b2ba2;
     }
@@ -657,9 +657,8 @@ nav .fas{
 @media (max-width: 450px){
 
     .header-text h1{
-        margin-top: 30%;
+        margin-top: 45%;
         font-size: 40px;
-        background: #302b2ba2;
         color: var(--white-color);
     }
     html{
@@ -682,10 +681,15 @@ nav .fas{
     }
 }
 
-@media (max-width: 365px){
+@media (max-width: 380px){
     /* .about-img img{
         width: 90vw;
     } */
+    .header-text h1{
+        margin-top: 50%;
+        font-size: 40px;
+        color: var(--white-color);
+    }
     .footer{
         flex-direction: column-reverse;
     }
