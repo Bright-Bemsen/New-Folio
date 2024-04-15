@@ -1,15 +1,6 @@
-// ============================menu icon navbar===========================*/
-const menuIcon = document.querySelector('#menu-icon');
-const navbar = document.querySelector('.navbar');
 
-menuIcon.addEventListener('click', () => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-});
-
-// =============scroll section active link===========================================*/ 
+// =============scroll section active link========================*/ 
 const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("header nav a");
 
 window.onscroll = () => {
   sections.forEach(sec => {
@@ -25,19 +16,17 @@ window.onscroll = () => {
       });
     };
   });
-
-
-// ============================sticky navbar===========================*/
-const header = document.querySelector(".header");
-
-header.classList.toggle("sticky", window.scrollY > 100);
-
-
-// =============remove menu icon navbar when click navbar link (scroll)=================*/
-menuIcon.classList.remove('bx-x');
-navbar.classList.remove('active');
-
 };
+
+
+  /*=============== SHOW SCROLL UP ===============*/ 
+const scrollUp = () =>{
+  const scrollUp = document.getElementById('scroll-up')
+  // when the scroll is higher than 350 viewport hight,and the show-scroll class to the a tag with the scrollup class
+  this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                                          :scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
 
 // =========================swiper======================================*/
 const swiper = new Swiper(".mySwiper", {
@@ -55,7 +44,7 @@ const swiper = new Swiper(".mySwiper", {
     },
 });
 
-// =========================dark light mood ====================================*/
+// ======================dark light mood ======================*/
 const darkMoonIcon = document.querySelector("#darkMoon-icon");
 darkMoonIcon.onclick = () => {
   darkMoonIcon.classList.toggle('bx-sun');
@@ -66,12 +55,11 @@ darkMoonIcon.onclick = () => {
 ScrollReveal({
   reset: true,
   distance: '80px',
-  duration:2000,
+  duration:2000, 
   delay: 200
 });
 
- ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
- ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .testimonia-wrapper, .contact-form', { origin: 'bottom' });
+ ScrollReveal().reveal('.home-content, .heading', { origin: 'top'});
+ ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .testimonia-wrapper, .contact-form', { origin: 'bottom'});
  ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
- ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' 
-});
+ ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right'});

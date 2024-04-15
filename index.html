@@ -13,122 +13,123 @@
 />
 
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <!--===================REMIXICONS===================-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
    
 </head>
 
 <body>
-
-    <header class="header">
-        <img src="/assets/img/logo.png" alt="logo image" class="logo">
-        <!-- <a href="#" class="logo">Bright</a> -->
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
-        <div class="bx bx-moon" id="darkMoon-icon"></div>
-        <div class="bx bx-menu" id="menu-icon"></div>
-    </header>
-
     <!-- home section design........................ -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello I am</h3>
-            <h1>Saawuan B Bright</h1>
-            <p>Information Technology professionals are the driving force behind the digital transformation that shapes our world. Their skills and dedication ensure that businesses and individuals can thrive in the digital age. As technology continues to evolve, IT experts will remain at the forefront, working tirelessly to innovate, secure, and maintain the systems that power our interconnected world.</p>
-            <div class="social-media">
-                <a href="https://www.facebook.com/profile.php?id=100089338931292" target="_blank"><i class='bx bxl-facebook'></i></a>
-                <a href="https://wa.me/+234(0)7012577941" target="_blank"><i class='bx bxl-whatsapp'></i></a>
-                <!-- <a href="https://twitter.com/yourprofile" target="_blank"><i class='bx bxl-twitter'></i></a> -->
-                <!-- <a href="https://t.me/@Brobright" target="_blank"><i class='bx bxl-telegram'></i></a> -->
-                <a href="https://www.youtube.com/@1Fullgist"><i class='bx bxl-youtube'></i></a>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/assets/img/logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">Background</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i> 
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Helo, I'M <span>Bright</span> <br> A Web Designer <br> & a    Frontend Developer</h1>
             </div>
-            <a href="./CV.pdf" class="btn" download="curriculum vitae">My CV</a>
-        </div>
 
-
-        <div class="profession-container">
-            <div class="profession-box">
-                <div class="profession" style="--i:0;">
-                    <i class='bx bx-code-alt'></i>
-                    <h3>Web Developer</h3>
-                </div>
-                <div class="profession" style="--i:1;">
-                    <i class='bx bx-code' ></i>
-                    <h3>Web Designer</h3>
-                </div>
-                <div class="profession" style="--i:2;">
-                    <i class='bx bxl-sketch'></i>
-                    <h3>Graphic Designer</h3>
-                </div>
-                <div class="profession" style="--i:3;">
-                    <i class='bx bx-code-alt'></i>
-                    <h3>UI/UX Designer</h3>
-                </div>
-                <div class="circle"></div>
-            </div>
-            <div class="overlay"></div>
         </div>
-        <div class="home-img">
-            <img src="/assets/img/home_img.png" alt="profile_picture">
-        </div>
-    </section>
+    </div>
 
     <!-- About section design............................. -->
-    <section class="about" id="about">
-        <!-- <h1>ABOUT CONTAINER</h1> -->
-        <div class="about-img">
-            <img src="/assets/img/about-picture.jpg" alt="about-img">
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="/assets/img/about-picture.jpg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">Background</h1>
+                        <p> I am Bright. A passionate and detail-oriented programmer   based in <b>FCT Abuja Nigeria</b>. 
+                            With a love for turning ideas into reality and bringing innovative solutions to life through code. I have passion for designing of user-friendly interfaces (Frontend Dev.)
+                            and i do enjoy every aspect of the development process. <br>
+                            Let's Build Together! 🚀
+                        </p>
+        
+                        <div class="tab-title">
+                            <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-link" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>Web Development</span><br>Frontend Developer</li>                  
+                                <li><span>System Administrator</span><br>Building Android/IOS apps</li>                  
+                                <li><span>Office App Expert</span><br>Micro Office Suit</li>                  
+                            </ul>
+                        </div>
+        
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2024 - Current</span><br>ICT Instructor/ Tutor</li>
+                                <li><span>2021 - 2024</span><br>Team lead at Kinatech</li>                  
+                                <li><span>2020 - 2021</span><br>Sales of ICT Gadgets at Microchips</li>                 
+                                <li><span>2017 - 2020</span><br>Computer Class Teacher</li>                 
+                            </ul>
+                        </div>
+        
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021</span><br>Diploma In Data Processing and Desktop Publishing</li>
+                                <li><span>2023</span><br>Professional Diploma in Office Application</li>                  
+                                <li><span>2023</span><br>Professional Diploma in Bussiness Management</li>                  
+                                <li><span>2023</span><br>Professional Diploma in Digital Management</li>                  
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="about-content">
-            <h2 class="heading"><span>A</span>bout </h2>
-            <h3>Hello there! 👋 I'm Bright Bemsen,</h3> <br> <p> a passionate and detail-oriented programmer based in <b>FCT Abuja Nigeria</b>. With a love for turning ideas into reality through code, I specialize in <b>JAVASRIPT and REACT JS, SASS, BEM etc</b>, bringing innovative solutions to life.
-                <br>
-                <br>
-                My journey in programming began with a curiosity for problem-solving, and since then, I've thrived on challenges that push my skills to new heights. Whether it's crafting efficient algorithms or designing user-friendly interfaces, I enjoy every aspect of the development process.
-                <br>
-                Let's build something amazing together! Feel free to reach out for collaboration, discussions, or just to share your favorite coding anecdotes.
-                <br>
-                <br>
-                Happy coding! 🚀
-                <br>
-                Feel free to personalize
-            </p>
-            <a href="#" class="btn">Read More</a>
-        </div>
-    </section>
     
-    <!-- ==========SERVICE SECTION=======================================-->
+    
+    <!-- ==========SERVICE SECTION======================-->
     <section class="services" id="services">
         <h2 class="heading">My <span>Services</span></h2>
 
         <div class="services-container">
             <div class="service-box">
-                <i class='bx bx-code-alt'></i>
+                <i class="fas fa-code"></i>
                 <h3>Web Development</h3>
                 <p>I am a Frontend Web developer, and in this case I don't talk much but allow what I do to speak on my behalf.</p>
                 <a href="#" class="btn">Read More</a>
             </div>
             <div class="service-box">
-                <i class='bx bxs-paint'></i>
+                <i class="fas fa-paint-brush"></i>
                 <h3>Graphic Design</h3>
                 <p>I do all kinds of Graphic Design. Ranging from Banners, Flyers, Certificates, Business cards etc.</p>
                 <a href="#" class="btn">Read More</a>
             </div>
             <div class="service-box">
-                <i class='bx bx-bar-chart-alt'></i>
+                <i class="fas fa-chart-bar"></i>
                 <h3>Digital Marketing</h3>
+                <p>I have expertices in digital Marketing across all the social media handles including Youtube/Email.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Tutor</h3>
                 <p>I have expertices in digital Marketing across all the social media handles including Youtube/Email.</p>
                 <a href="#" class="btn">Read More</a>
             </div>
         </div>
         </section>
 
-     <!-- ==========SERVICE SECTION=====================================-->
+     <!-- ==========SERVICE SECTION===========================-->
      <section class="portfolio" id="portfolio">
         <h2 class="heading">"2024 Key<span> Tech Disciplines"</span></h2>
         
@@ -137,54 +138,54 @@
                 <img src="/assets/img/digital-marketing.png" alt="digital marketing">
                 <div class="portfolio-layer">
                     <h4>Digital Marketing</h4>
-                    <p>I have expertices in digital Marketing across all the social media handles including Youtube/Email.</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <p>As the world is going digital, expertices in digital Marketing across all the social media handles including Youtube/Email have become high in demand.</p>
+                    <a href="#"><i class="fas fa-chart-bar"></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
                 <img src="/assets/img/web_design.png" alt="web design">
                 <div class="portfolio-layer">
                     <h4>Web Design</h4>
-                    <p>I design website like E-Commerce, Real Estate etc, using wordpress (Content management) with years of Experience.</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <p>Website designers (Content management) like E-Commerce, Real Estate, Blog sites etc, are cashing in high friquency. It's a good field to invest your knowledge in.</p>
+                    <a href="#"><i class="fas fa-laptop-code"></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
                 <img src="/assets/img/web_developer.png" alt="web developer">
                 <div class="portfolio-layer">
                     <h4>Web Development</h4>
-                    <p>I am a fullstack developer, and in this case I don't talk much but allow what i do to speak on my behalf.</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <p>Yes we are know that to be a frontend developer alone is not a small deal. Not all organisation will be able to pay you talk more of been a Fullstack developer!. In this case I don't need to talk much it's a topnouch field.</p>
+                    <a href="#"><i class="fas fa-code"></i></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
                 <img src="/assets/img/graphic-design.png" alt="graphic design">
                 <div class="portfolio-layer">
-                    <h4>Graphic Designer</h4>
-                    <p>I do all kinds of Graphic Design. Ranging from Banners, Flyers, Certificates, Business cards etc.</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <h4>Graphic Design</h4>
+                    <p>For you to grow better in this era, you need digital skills and that includes Graphic Designing. Ranging from Banners, Flyers, Certificates, Business cards and lot more....</p>
+                    <a href="#"><i class="fas fa-paint-brush"></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
                 <img src="/assets/img/ms_excel.jpeg" alt="ms excel">
                 <div class="portfolio-layer">
                     <h4>Ms Excel</h4>
-                    <p>EXCEL is a vast application right? The same way am wide and vast in it's formula you my need in you parastatar.</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <p>EXCEL is a vast application that is neede in most organisation for easy working. So you need wide and vast knowledge in it's formulas and functions.</p>
+                    <a href="#"><i class="fas fa-file-excel"></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
                 <img src="/assets/img/photoshop.png" alt="photoshop">
                 <div class="portfolio-layer">
                     <h4>Photoshop</h4>
-                    <p>Here i manipulate Images by adding all the necessary effects needed to make you look cuteter than you ever thought of.</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <p>Here you need this ideal to enable you add all the necessary effects needed to make you picture outstanding as a digital personnel.</p>
+                    <a href="#"><i class="fas fa-file-image"></i></a>
                 </div>
             </div>
         </div>
      </section>
      
-     <!-- =============testimonial design============================ -->
+     <!-- =============testimonial design====================== -->
      <div class="testimonial-container">
         <h2 class="heading">My Roles <span>In ITC</span></h2>
         <div class="testimonial-wrapper">
@@ -194,22 +195,17 @@
                         <img src="/assets/img/system_admin.png" alt="system admin">
                         <h3>1: System Administrator:</h3> <p>These experts manage the day-to-day operations of an organization's computer systems. They ensure that servers, networks, and other infrastructure components run smoothly, perform updates, and troubleshoot issues as they arise.</p>
                     </div>
+
                     <div class="testimonial-slide swiper-slide">
                         <img src="/assets/img/web_developer.png" alt="web developer">
                         <h3>2: Software Developer:</h3> <p>Software developers are the creative minds behind the programs and applications we use daily. They design, code, test, and deploy software that ranges from mobile apps to enterprise-level solutions.</p>
                     </div>
+
                     <div class="testimonial-slide swiper-slide">
                         <img src="/assets/img/network_engineer.png" alt="network engineer">
-                        <h3>3: Network Engineer:</h3> <p>Network engineers design, implement, and manage the complex networks that connect our devices to the internet and each other. They play a crucial role in ensuring data flows securely and efficiently.</p>
+                        <h3>3: Network Engineer:</h3> <p>Network engineers design, Manage the complex networks that connect our devices to the internet and each other. They play a crucial role in ensuring data flows securely and efficiently.</p>
                     </div>
-                    <div class="testimonial-slide swiper-slide">
-                        <img src="/assets/img/cybal_security.png" alt="cybal security">
-                        <h3>4: Cybersecurity Specialist:</h3> <p>As cyber threats become more sophisticated, cybersecurity specialists are in high demand. They protect organizations from cyberattacks, develop security protocols, and continuously monitor systems for vulnerabilities.</p>
-                    </div>
-                    <div class="testimonial-slide swiper-slide">
-                        <img src="/assets/img/data-analytics.png" alt="data analytics">
-                        <h3>5: Data Analysts and Scientist:</h3> <p>These professionals leverage data to make informed business decisions. They collect, analyze, and interpret data to uncover valuable insights that drive strategic choices.</p>
-                    </div>
+
                     <div class="testimonial-slide swiper-slide">
                         <img src="/assets/img/IT-project-manager.png" alt="IT project manager">
                         <h3> 6: IT Project Manager:</h3> <p>IT project managers oversee the planning, execution, and completion of IT projects. They coordinate teams, manage budgets, and ensure projects align with organizational goals.</p>
@@ -222,7 +218,7 @@
                     </div>
                 </div>
 
-                <!-- ==================NEXT AND PREV HANDLES=========================== -->
+                <!-- ===============NEXT AND PREV HANDLES============ -->
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
@@ -235,15 +231,22 @@
         <h2 class="heading">Contact <span>Me!</span></h2>
         <form action="#">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="Email" placeholder="Email Address">
+                <input type="text" name="Name" placeholder="Full Name" required>
+                <input type="email" name="Email" placeholder="Email Address" required>
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Whatsapp Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="number" name="Whatsapp" placeholder="Whatsapp Number" required>
+                <input type="text" name="Subject" placeholder="Email Subject" required>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="Submit" href="mailto:saawuanbrightbemsen@gmail.com" value="Send Message" class="btn">
+            <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="Submit" href="mailto:saawuanbrightbemsen@gmail.com" value="Submit" class="btn">
+            <a href="./CV.pdf" class="btn" download="curriculum vitae">My CV</a>
+            <div class="social-icons ">
+                <a href="https://www.facebook.com/profilephpid=100089338931292" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com@1Fullgist"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.youtube.com@1Fullgist"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com@1Fullgist"><i class="fab fa-whatsapp"></i></a>
+            </div>
         </form>
      </section>
 
@@ -253,12 +256,42 @@
         <div class="footer-text">
             <p>Copyright &copy; </span> <span id="currentYear"></span> || <b>Fullgist</b> || All Rights Reserved.</p>
         </div>
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
-        </div>
      </footer>
 
+           <!--========== SCROLL UP ==========-->
+           <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
      <!-- footer javascript -->
+
+<!-- =======================JAVASCRIPT PART====================== -->
+
+<script>
+        const  tablinks = document.getElementsByClassName("tab-links");
+        const  tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script> 
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
 
      <script>
         document.getElementById("currentYear").innerText = new Date().getFullYear();
