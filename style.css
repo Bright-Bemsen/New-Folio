@@ -92,12 +92,16 @@ nav ul li a:hover::after{
 }
 .header-text{
     margin-top: 20%;
-    font-size: 30px; 
+    font-size: 30px;
+    color: var(--white-color);
+    font-weight: 600;
 }
 
 .header-text h1{
     font-style: 60px;
     margin-top: 20px;
+    color: var(--white-color);
+    font-weight: 600;
 }
 
 .header-text h1 span{
@@ -653,9 +657,10 @@ nav .fas{
 @media (max-width: 450px){
 
     .header-text h1{
-        margin-top: 120%;
+        margin-top: 30%;
         font-size: 40px;
         background: #302b2ba2;
+        color: var(--white-color);
     }
     html{
         font-size: 50%;
