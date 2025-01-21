@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+    <link rel="icon" type="image/png" href="/assets/img/favicon.jpg" />
     <title>Bright || portfolio</title>
 
 <!-- ======swiper css========== -->
@@ -38,8 +38,8 @@
                 <i class="fas fa-bars" onclick="openmenu()"></i> 
             </nav>
             <div class="header-text">
-                <p>UI/UX Designer</p>
-                <h1> He is <span>Bright</span> A Frontend Developer,<br>Graphic & Web Designer </h1>
+                <p>Tech Expart</p>
+                <h1> He is <span>A Frontend Developer,</span><br>Graphic & Web Designer </h1>
             </div>
 
         </div>
@@ -54,7 +54,7 @@
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">Background</h1>
-                        <p> I am Bright. A passionate and detail-oriented programmer   based in <b>FCT Abuja Nigeria</b>. 
+                        <p> I am a passionate and detail-oriented programmer based in <b>FCT Abuja Nigeria</b>. 
                             With a love for turning ideas into reality and bringing innovative solutions to life through code. I have passion for designing of user-friendly interfaces (Frontend Dev.)
                             and i do enjoy every aspect of the development process. <br>
                             Let's Build Together! 🚀
@@ -99,7 +99,8 @@
     
     <!-- ==========SERVICE SECTION======================-->
     <section class="services" id="services">
-        <h2 class="heading">My <span>Services</span></h2>
+        <h2 class="heading">My <span>Tutorials</span><p class="p11"> My Transformative Tutorials Cut All listed Tech Field and Beyound With a Stylish Teaching Techniques That Must Make You Understand My Teching Very Simple, Trust Me For That!! </p></h2>
+        
 
         <div class="services-container">
             <div class="service-box">
@@ -122,6 +123,12 @@
             </div>
             <div class="service-box">
                 <i class="fas fa-graduation-cap"></i>
+                <h3>Office Applications</h3>
+                <p>You can't Wait to watch My Tutorials on MS-Word, MS-Excel, MS-PowerPoint, and General Use of Internet if You Truly Want to be on top of Your Office Work.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-ms-word"></i>
                 <h3>Tutor</h3>
                 <p>I have expertices in digital Marketing across all the social media handles including Youtube/Email.</p>
                 <a href="#" class="btn">Read More</a>
@@ -131,7 +138,7 @@
 
      <!-- ==========SERVICE SECTION===========================-->
      <section class="portfolio" id="portfolio">
-        <h2 class="heading">"2024 Key<span> Tech Disciplines"</span></h2>
+        <h2 class="heading">"2025 Key<span> Tech Disciplines"</span></h2>
         
         <div class="portfolio-container">
             <div class="portfolio-box">
@@ -229,13 +236,13 @@
      <!-- =============CONTACT SECTION DESIGN================ -->
      <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
-        <form action="#">
+        <form name="submit-to-google-sheet">
             <div class="input-box">
                 <input type="text" name="Name" placeholder="Full Name" required>
                 <input type="email" name="Email" placeholder="Email Address" required>
             </div>
             <div class="input-box">
-                <input type="number" name="Whatsapp" placeholder="Whatsapp Number" required>
+                <input type="number" name="Whatsapp" placeholder="Whatsapp Number">
                 <input type="text" name="Subject" placeholder="Email Subject" required>
             </div>
             <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
@@ -245,7 +252,7 @@
                 <a href="https://www.facebook.com/profilephpid=100089338931292" target="_blank"><i class="fab fa-facebook"></i></a>
                 <a href="https://www.youtube.com@1Fullgist"><i class="fab fa-youtube"></i></a>
                 <a href="https://www.youtube.com@1Fullgist"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.youtube.com@1Fullgist"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://wa.me/2347012577941?text=Hello%20there,%20I%20would%20like%20to%20chat%20with%20you!"><i class="fab fa-whatsapp"></i></a>
             </div>
         </form>
      </section>
@@ -254,7 +261,7 @@
      <!-- =====================FOOTER DESIGN========================== -->
      <footer class="footer">
         <div class="footer-text">
-            <p>Copyright &copy; </span> <span id="currentYear"></span> || <b>Fullgist</b> || All Rights Reserved.</p>
+            <p>Copyright &copy; </span> <span id="currentYear"></span> || <b>BSBteck</b> || All Rights Reserved.</p>
         </div>
      </footer>
 
@@ -303,5 +310,22 @@
      <!-- ======swiper js============= -->
      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
+
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxz8UIFBSq0BY5qdyA9yNFsMX8IV4SwsIpBFcqkoy0riOM7frJD2Kl6AfPnzbL4aALW_A/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+
+
 </body>
 </html>

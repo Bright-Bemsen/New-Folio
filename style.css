@@ -12,9 +12,9 @@
 }
 
 :root{
-    --bg-color: #702525;
+    --bg-color: #06243f;
     --text-color:#333;
-    --main-color: hsl(29, 97%, 49%);;
+    --main-color: hsl(187, 50%, 50%);;
     --white-color:#fdfdfd;
     --shadow-color: rgba(0,0,0,.2);
 }
@@ -40,7 +40,7 @@ section{
 .heading{
     font-size: 40px;
     font-weight: 600;
-    color: hsl(29, 97%, 49%);
+    color: hsl(150, 74%, 46%);
 }
 
 #header{
@@ -105,11 +105,11 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: hsl(29, 97%, 49%);
+    color: var(--main-color);
 }
 
 
-/* =====================SOCIAL MEDIA ICONS================ */
+/* ===================SOCIAL MEDIA ICONS=============== */
 .social-icons{
     margin-top: 30px;
 }
@@ -134,7 +134,7 @@ nav ul li a:hover::after{
     color: var(--white-color);
 }
 
-/* ==================BTN STYLING START=======================*/
+/* ===============BTN STYLING START===================*/
 .btn:hover{
     background: transparent;
     color: var(--main-color);
@@ -155,7 +155,7 @@ nav ul li a:hover::after{
 }
 
 
-/* =======================ABOUT STYLING================================= */
+/* ===================ABOUT STYLING===================== */
 #about{
     padding: 80px 0;
     color: #ababab;
@@ -241,6 +241,11 @@ nav ul li a:hover::after{
 .services h2{
     margin-bottom: 5rem;
 }
+.p11{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+    color: var(--white-color);
+}
 .services .services-container{
     display: flex;
     justify-content: center;
@@ -262,6 +267,7 @@ nav ul li a:hover::after{
 .services-container .service-box:hover{
     box-shadow: 0 .1rem 2rem var(--shadow-color);
     transform: scale(1.02);
+    color: var(--white-color);
 }
 .service-box i{
     font-size: 7rem;
@@ -418,7 +424,97 @@ nav ul li a:hover::after{
 }
 
 /*========================CONTACT design============================*/
-.contact h2{
+
+ /* Contact Section */
+ .contact {
+    position: relative;
+    background: url('/assets/img/contact_home_img.png') no-repeat center center/cover;
+    padding: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency */
+    z-index: 1;
+}
+
+.contact .heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+.contact .heading span {
+    color: #ff5722;
+}
+
+.contact form {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact .input-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.contact .input-box input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.contact .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color:var(--main-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contact .btn:hover {
+    background-color: var(--bg-color);
+}
+
+.contact .social-icons {
+    margin-top: 20px;
+}
+
+.contact .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+/* .contact .social-icons a:hover {
+    color: ;
+} */
+
+/* .contact h2{
     margin-bottom: 3rem;
 }
 .contact form{
@@ -452,7 +548,7 @@ nav ul li a:hover::after{
 .contact form .btn{
     margin-top: 2rem;
     cursor: pointer;
-}
+} */
 
 /*========================FOOTER DESIGN========================*/
 .footer{
@@ -519,7 +615,7 @@ nav ul li a:hover::after{
         overflow-x: hidden;
     } */
     #header{
-        background-image: url(/assets/img/phone-bg.png);
+        background-image: url(/assets/img/phone-bg1.png);
     };
 
     .services,
@@ -538,7 +634,7 @@ nav ul li a:hover::after{
 
 @media (max-width: 750px){
     #header{
-        background-image: url(/assets/img/phone-bg.png);
+        background-image: url(/assets/img/phone-bg1.png);
     }
    .social-icons a{
         margin: 2.5rem .75rem 3rem;
@@ -584,7 +680,7 @@ nav .fas{
 @media (max-width: 630px){
 
     #header{
-        background-image: url(/assets/img/phone-bg.png);
+        background-image: url(/assets/img/phone-bg1.png);
     };
 
     .header-text{
